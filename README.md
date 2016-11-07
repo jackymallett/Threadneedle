@@ -1,4 +1,4 @@
-Threadneedle
+Threadneedle:: Economic and Banking Systems Simulation Framework
 ============
 
 [Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started) |
@@ -57,9 +57,9 @@ Jordi Bieber (Bug fixes, Windows compatibility)
 `Crowley had been extremely impressed with the warranties offered by the computer industry, and had in fact sent a bundle Below to the department that drew up the Immortal Soul agreements, with a yellow memo form attached just saying: "Learn, guys." Good Omens, Terry Pratchett and Neil Gaiman`
 
 
-Threadneedle is provided free for non-commercial research purposes under the creative commons Attribution-NonCommercial 3.0 License:
+Threadneedle is provided free for non-commercial research purposes under the creative commons Attribution-NonCommercial-ShareAlike 4.0 International License:
 
-http://creativecommons.org/licenses/by-nc/3.0/us/legalcode
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 Please use the Threadneedle paper above for citations. The author can be contacted at jacky@ru.is if you wish to discuss commercial licensing and availability, or courses and seminars on Banking and Finance using Threadneedle.
 
