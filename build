@@ -1,0 +1,29 @@
+#!/bin/bash
+#
+# Build threadneedle and run without configuration files. Directory for java
+# classes created if not present.
+#
+# Author: David Gudjonsson
+
+CLASSES="classes"
+CP="classes:src/resources:lib/*:"
+# Enable or disable lint warning checks
+#XL="-Xlint"
+XL=""				
+
+if [ ! -d $CLASSES ]; then
+   mkdir classes
+else
+   rm -rf classes/*
+fi
+
+javac $XL -d classes -cp $CP src/base/*.java
+javac $XL -d classes -cp $CP src/statistics/*.java
+javac $XL -d classes -cp $CP -parameters $XL src/core/*.java
+javac $XL -d classes -cp $CP src/agents/*.java
+javac $XL -d classes -cp $CP src/charts/*.java
+javac $XL -d classes -cp $CP src/gui/*.java
+
+# Pass parameters through to Threadneedle. 
+
+java -classpath $CP gui.Threadneedle $@
