@@ -84,13 +84,13 @@ public class BorrowerController extends AgentController implements Initializable
     borrower.loanType = Loan.Type.valueOf((String) loanType.getValue());
     borrower.setLender(simeng.govt.banks.getBank((String) lender.getValue()));
 
-    // Set employer if selected.
+    // Borrower's are automatically employed by specified bank
 
-    if (!employer.getValue().equals("Unemployed"))
-    {
+    //if (!employer.getValue().equals("Unemployed"))
+    //{
       borrower.bankEmployee = true;
       simeng.govt.banks.getBank((String) employer.getValue()).hireEmployee(borrower, 1);
-    }
+    //}
     return borrower;
   }
 }
