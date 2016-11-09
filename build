@@ -19,7 +19,7 @@ fi
 
 javac $XL -d classes -cp $CP src/base/*.java
 javac $XL -d classes -cp $CP src/statistics/*.java
-javac $XL -d classes -cp $CP -parameters $XL src/core/*.java
+#javac $XL -d classes -cp $CP -parameters $XL src/core/*.java
 javac $XL -d classes -cp $CP src/agents/*.java
 javac $XL -d classes -cp $CP src/charts/*.java
 javac $XL -d classes -cp $CP src/gui/*.java

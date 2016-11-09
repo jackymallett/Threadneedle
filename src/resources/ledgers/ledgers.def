@@ -1,0 +1,11 @@
+loan,ASSET,LOAN,single  
+cash,ASSET,CASH,single
+reserve,ASSET,DEPOSIT,single
+loss_reserve,ASSET,DEPOSIT,single
+ib_debt,LIABILITY,LOAN,single  
+deposit,LIABILITY,DEPOSIT,multiple
+interest_income,LIABILITY,DEPOSIT,single
+loss_provision,LIABILITY,DEPOSIT,single
+retained_earnings,EQUITY,DEPOSIT,single
+non-cash,LIABILITY,DEPOSIT,single
+capital,EQUITY,CAPITAL,single  

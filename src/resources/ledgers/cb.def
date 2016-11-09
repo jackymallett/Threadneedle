@@ -1,0 +1,8 @@
+loan,ASSET,CAPITAL,single
+treasury,ASSET,CAPITAL, single 
+cash,ASSET,CASH,single
+loss_provision,ASSET,DEPOSIT, single
+deposit,LIABILITY,DEPOSIT,multiple
+debt,LIABILITY,LOAN,single
+interest_income,LIABILITY,DEPOSIT,single
+capital,EQUITY,CAPITAL,single 

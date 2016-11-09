@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<SplitPane dividerPositions="0.22110552763819097" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" orientation="VERTICAL" prefWidth="700.0" xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane minWidth="0.0" prefWidth="700.0">
+        <GridPane prefWidth="700.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="145.0" minWidth="10.0" prefWidth="145.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="96.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="253.0" minWidth="10.0" prefWidth="189.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" prefWidth="109.0"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="61.0"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <TextField fx:id="interestRateDelta" prefHeight="25.0" prefWidth="77.0" promptText="3"
+                       GridPane.columnIndex="1">
+                <tooltip>
+                    <Tooltip text="Additional interest percentage over Central bank base rate charged by bank"/>
+                </tooltip>
+                <padding>
+                    <Insets right="10.0"/>
+                </padding>
+                <GridPane.margin>
+                    <Insets left="10.0" right="20.0"/>
+                </GridPane.margin>
+            </TextField>
+            <Label prefHeight="15.0" prefWidth="189.0" text="Rounds/ Capital Increase" GridPane.columnIndex="2"
+                   GridPane.rowIndex="1">
+                <padding>
+                    <Insets left="10.0"/>
+                </padding>
+            </Label>
+            <Label text="Capital Increase %" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="10.0"/>
+                </GridPane.margin>
+            </Label>
+            <TextField fx:id="dividendIncrease" promptText="2" GridPane.columnIndex="3">
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0"/>
+                </GridPane.margin>
+                <tooltip>
+                    <Tooltip text="Percent of Income to pay to share owners."/>
+                </tooltip>
+            </TextField>
+            <TextField fx:id="roundsCapitalInc" promptText="12" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0"/>
+                </GridPane.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#onSave" text="OK" GridPane.columnIndex="4">
+                <GridPane.margin>
+                    <Insets left="10.0"/>
+                </GridPane.margin>
+            </Button>
+            <TextField fx:id="capitalIncrease" promptText="2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <tooltip>
+                    <Tooltip text="Amount to increase capital by if funds available."/>
+                </tooltip>
+                <GridPane.margin>
+                    <Insets left="10.0" right="20.0"/>
+                </GridPane.margin>
+            </TextField>
+            <Label text="Interest Rate δ ">
+                <GridPane.margin>
+                    <Insets left="10.0"/>
+                </GridPane.margin>
+            </Label>
+            <Label prefHeight="15.0" prefWidth="189.0" text="Dividend % on Capital" GridPane.columnIndex="2">
+                <padding>
+                    <Insets left="10.0"/>
+                </padding>
+            </Label>
+            <Label text="Preferential Share Price" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0"/>
+                </GridPane.margin>
+            </Label>
+            <TextField fx:id="prefSharePrice" promptText="10" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="10.0" right="10.0"/>
+                </GridPane.margin>
+            </TextField>
+            <Label text="Loss Provision %" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="10.0"/>
+                </GridPane.margin>
+            </Label>
+            <TextField fx:id="lossProvisionPct" promptText="1" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                <GridPane.margin>
+                    <Insets left="10.0" right="20.0"/>
+                </GridPane.margin>
+            </TextField>
+        </GridPane>
+    </AnchorPane>
+    <AnchorPane fx:id="agentHolder" minHeight="0.0" minWidth="0.0" prefWidth="700.0"/>
+</SplitPane>

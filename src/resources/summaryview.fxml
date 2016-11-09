@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <ScrollPane fitToHeight="true" fitToWidth="True" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0"
+                xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+        <TableView fx:id="summaryTable" prefHeight="395.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="typeCol" prefWidth="100.0" text="Type"/>
+                <TableColumn fx:id="nameCol" prefWidth="100.0" text="Name"/>
+                <TableColumn fx:id="productCol" prefWidth="100.0" text="Product"/>
+                <TableColumn fx:id="employeesCol" prefWidth="80.0" text="Workers"/>
+                <TableColumn fx:id="depositCol" prefWidth="100.0" text="Deposit"/>
+                <TableColumn fx:id="debtCol" prefWidth="100.0" text="Debt"/>
+                <TableColumn fx:id="employerCol" prefWidth="100.0" text="Employer"/>
+                <TableColumn fx:id="salaryCol" prefWidth="60.0" text="Salary"/>
+                <TableColumn fx:id="balanceCol" prefWidth="60.0" text="I/O"/>
+            </columns>
+        </TableView>
+    </ScrollPane>
+</AnchorPane>

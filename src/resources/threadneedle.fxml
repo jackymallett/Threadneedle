@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import gui.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.layout.*?>
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+    <BorderPane prefHeight="800.0" prefWidth="1000.0">
+        <top>
+            <MenuBar fx:id="menuBar" BorderPane.alignment="CENTER">
+                <Menu mnemonicParsing="false" text="File">
+                    <MenuItem mnemonicParsing="false" text="Close" onAction="#handleClose">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="C" shift="UP" control="DOWN" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem mnemonicParsing="false" text="Save As" onAction="#handleSaveAs">
+                        <accelerator>
+                            <KeyCodeCombination alt="DOWN" code="S" shift="UP" control="UP" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem mnemonicParsing="false" text="Save" onAction="#handleSave">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="S" shift="UP" control="DOWN" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem mnemonicParsing="false" text="Load File" onAction="#handleLoadFile">
+                        <accelerator>
+                            <KeyCodeCombination alt="DOWN" code="L" shift="UP" control="UP" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem mnemonicParsing="false" text="Load" onAction="#handleLoad">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="L" shift="UP" control="DOWN" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Simulation">
+                    <MenuItem mnemonicParsing="false" text="Description" onAction="#handleDescription">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="D" shift="UP" control="DOWN" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem mnemonicParsing="false" text="Charts" onAction="#handleCharts">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="C" shift="UP" control="DOWN" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                    <MenuItem mnemonicParsing="false" text="Configuration" onAction="#handleConfig">
+                        <accelerator>
+                            <KeyCodeCombination alt="UP" code="O" shift="UP" control="DOWN" meta="UP"
+                                                shortcut="UP"/>
+                        </accelerator>
+                    </MenuItem>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <MenuItem mnemonicParsing="false" text="About" onAction="#handleHelp"/>
+                </Menu>
+            </MenuBar>
+        </top>
+        <center>
+            <MainPane fx:id="mainPane" prefHeight="800.0" prefWidth="800.0" maxHeight="-Infinity"
+                      maxWidth="-Infinity" BorderPane.alignment="CENTER"/>
+        </center>
+        <right>
+            <VBox fx:id="rightMenu" alignment="CENTER">
+                <fx:include source="marketview.fxml" fx:id="marketView"/>
+                <fx:include source="labourview.fxml" fx:id="labourView"/>
+            </VBox>
+        </right>
+        <bottom>
+            <HBox spacing="20" prefHeight="30.0" prefWidth="1000.0" alignment="CENTER">
+                <Button fx:id="regionButton" mnemonicParsing="false" text="Add Region" onAction="#regionSelect"
+                        onScroll="#regionRotate">
+                    <tooltip>
+                        <Tooltip text="Set region for new agents added to simulation."/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="showBanks" mnemonicParsing="false" text="Show Banks" onAction="#showBanksAction">
+                    <tooltip>
+                        <Tooltip text="Show Bank ledgers"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="showSim" mnemonicParsing="false" text="Summary" onAction="#showSummary">
+                    <tooltip>
+                        <Tooltip text="Show summary of running simulation"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="showMacro" mnemonicParsing="false" text="Show Macro" onAction="#showMacroAction">
+                    <tooltip>
+                        <Tooltip text="Show Macro Economic Analysis"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="load" mnemonicParsing="false" text="Load" onAction="#handleLoad">
+                    <tooltip>
+                        <Tooltip text="Load default simulation (defaultSimulation.json)"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="save" mnemonicParsing="false" text="Save" onAction="#handleSave">
+                    <tooltip>
+                        <Tooltip text="Save current simulation to default file (defaultSimualtion.json)"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="stepNButton" mnemonicParsing="false" text="Step" onAction="#stepNButton"
+                        onScroll="#onRotate">
+                    <tooltip>
+                        <Tooltip text="Step simulation forward. (Rotate for faster intervals)"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="resetButton" mnemonicParsing="false" text="Reset" onAction="#resetButtonAction">
+                    <tooltip>
+                        <Tooltip text="Clear simulation"/>
+                    </tooltip>
+                </Button>
+                <Button fx:id="exitButton" mnemonicParsing="false" text="Exit" onAction="#exitButtonAction">
+                    <tooltip>
+                        <Tooltip text="Exit Program"/>
+                    </tooltip>
+                </Button>
+            </HBox>
+        </bottom>
+        <left>
+            <LeftMenu fx:id="leftMenu" spacing="20" prefHeight="200.0" prefWidth="50.0"
+                      BorderPane.alignment="CENTER"/>
+            <BorderPane.margin>
+                <Insets left="5.0" right="5.0"/>
+            </BorderPane.margin>
+            <children>
+                <SimNode fx:id="Bank" onDragDetected="#mouseDragDetected" onMouseReleased="#mouseDragDropped"
+                         onMouseDragged="#onDragOver">
+                    <image>
+                        <Image url="@images/B.png" preserveRatio="true" smooth="true"/>
+                    </image>
+                    <type>Bank</type>
+                    <tooltip>Vanilla Bank</tooltip>
+                </SimNode>
+                <SimNode fx:id="WorkBank" onDragDetected="#mouseDragDetected" onMouseReleased="#mouseDragDropped"
+                         onMouseDragged="#onDragOver">
+                    <image>
+                        <Image url="@images/WB.png" requestedWidth="250" requestedHeight="250" preserveRatio="false" smooth="true"/>
+                    </image>
+                    <type>WorkBank</type>
+                    <tooltip>Work  Bank (Pays interest on Saver's accounts)</tooltip>
+                </SimNode>
+                <SimNode fx:id="Farm" onDragDetected="#mouseDragDetected" onMouseReleased="#mouseDragDropped"
+                         onMouseDragged="#onDragOver">
+                    <image>
+                        <Image url="@images/F.png" preserveRatio="true" smooth="true"/>
+                    </image>
+                    <type>Farm</type>
+                    <tooltip>Food producer - auto-adds Food market</tooltip>
+                    <properties product="Food" initialDeposit="100" labourInput="5"/>
+                </SimNode>
+                <SimNode fx:id="Builder" onDragDetected="#mouseDragDetected" onMouseReleased="#mouseDragDropped"
+                         onMouseDragged="#onDragOver">
+                    <image>
+                        <Image url="@images/BR.png" requestedWidth="250" requestedHeight="250" preserveRatio="false" smooth="true"/>
+                    </image>
+                    <type>Builder</type>
+                    <tooltip>House producer - borrows money to build houses and employ workers</tooltip>
+                    <properties product="House" initialDeposit="0" labourInput="80" buildTime="10"/>
+                </SimNode>
+                <SimNode fx:id="InvestmentCompany" onDragDetected="#mouseDragDetected"
+                         onMouseReleased="#mouseDragDropped" onMouseDragged="#onDragOver">
+                    <image>
+                        <Image url="@images/S.png" preserveRatio="true" smooth="true"/>
+                    </image>
+                    <type>InvestmentCompany</type>
+                    <tooltip>Stock investment company (requires Stock Exchange)</tooltip>
+                    <properties product="Shares" initialDeposit="300" labourInput="1"/>
+                </SimNode>
+                <SimNode fx:id="StockExchange" onDragDetected="#mouseDragDetected"
+                         onMouseReleased="#mouseDragDropped" onMouseDragged="#onDragOver">
+                    <image>
+                        <Image url="@images/Exchange.png" preserveRatio="true" smooth="true"/>
+                    </image>
+                    <type>StockExchange</type>
+                    <tooltip>Stock exchange</tooltip>
+                    <properties name="TNSE" initialDeposit="0" labourInput="0"/>
+                </SimNode>
+            </children>
+        </left>
+    </BorderPane>
+</ScrollPane>

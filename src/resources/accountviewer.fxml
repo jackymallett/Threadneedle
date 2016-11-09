@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="397.0" prefWidth="597.0">
+    <ScrollPane fitToHeight="true" fitToWidth="True" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+                minWidth="-Infinity" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" prefHeight="400.0"
+                prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+        <TableView fx:id="accountTable" prefHeight="400.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="71.0" text="ID"/>
+                <TableColumn fx:id="nameCol" prefWidth="110.0" text="Name"/>
+                <TableColumn fx:id="depositCol" prefWidth="197.0" text="Deposit"/>
+                <TableColumn fx:id="debtCol" prefWidth="221.0" text="Debt"/>
+            </columns>
+        </TableView>
+    </ScrollPane>
+</AnchorPane>

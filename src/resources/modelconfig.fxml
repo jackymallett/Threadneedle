@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <GridPane>
+            <hgap>
+                <Long fx:value="5"/>
+            </hgap>
+            <vgap>
+                <Long fx:value="5"/>
+            </vgap>
+            <children>
+                <Label text="Country Name" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                <TextField fx:id="countryTextBox" GridPane.rowIndex="0" GridPane.columnIndex="3"/>
+
+                <Label text="Government Type" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <ChoiceBox fx:id="govtType" GridPane.rowIndex="0" GridPane.columnIndex="1">
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="BaselGovt"/>
+                        </FXCollections>
+                    </items>
+                    <value>
+                        <String fx:value="BaselGovt"/>
+                    </value>
+                </ChoiceBox>
+                <Label text="Banking System" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <ChoiceBox fx:id="bankingChoice" GridPane.rowIndex="1" GridPane.columnIndex="1">
+                    <tooltip>
+                        <Tooltip text="Basel: fractional reserve banking, Deposit: constant money no lending bank"/>
+                    </tooltip>
+                    <items>
+                        <FXCollections fx:factory="observableArrayList">
+                            <String fx:value="Basel Capital"/>
+                        </FXCollections>
+                    </items>
+                </ChoiceBox>
+                <Label text="Config File: " GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="configFile" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            </children>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </GridPane>
+        <HBox alignment="CENTER">
+            <children>
+                <Button fx:id="okButton" defaultButton="true" mnemonicParsing="false" onAction="#onOkButton" text="OK"/>
+            </children>
+            <opaqueInsets>
+                <Insets/>
+            </opaqueInsets>
+            <padding>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+            </padding>
+        </HBox>
+    </children>
+</VBox>

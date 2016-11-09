@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# Build threadneedle and run without configuration files. Directory for java
+# classes created if not present.
+#
+# Author: David Gudjonsson
+
+CLASSES="classes"
+
+java -classpath "classes:src/resources:lib/*:" gui.Threadneedle $*

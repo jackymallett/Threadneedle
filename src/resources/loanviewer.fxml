@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="800.0">
+    <ScrollPane fitToHeight="true" fitToWidth="True" AnchorPane.topAnchor="0.0" AnchorPane.bottomAnchor="0.0"
+                AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" maxHeight="-Infinity" maxWidth="-Infinity"
+                minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+                prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+        <TableView fx:id="loanTable" prefHeight="400.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="idCol" text="ID" prefWidth="20.0"/>
+                <TableColumn fx:id="debtorCol" text="Debtor"/>
+                <TableColumn fx:id="typeCol" text="Type"/>
+                <TableColumn fx:id="interestCol" text="Interest"/>
+                <TableColumn fx:id="durationCol" text="Duration"/>
+                <TableColumn fx:id="debtCol" text="Principal"/>
+                <TableColumn fx:id="remainingCol" text="Remaining"/>
+                <TableColumn fx:id="capitalpaidCol" text="Capital paid"/>
+                <TableColumn fx:id="interestpaidCol" text="Interest paid"/>
+            </columns>
+        </TableView>
+    </ScrollPane>
+</AnchorPane>

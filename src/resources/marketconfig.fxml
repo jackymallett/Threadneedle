@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.Long?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+       <GridPane>
+           <hgap>
+               <Long fx:value="5" />
+           </hgap>
+           <vgap>
+               <Long fx:value="5" />
+           </vgap>
+           <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </padding>
+           <columnConstraints>
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+               <ColumnConstraints />
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints />
+               <RowConstraints />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+               <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" />
+            <RowConstraints />
+           </rowConstraints>
+          <children>
+              
+              <Label text="Market name" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+              <TextField fx:id="marketName" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                  <tooltip>
+                   <Tooltip text="Unique Identifier for Market" />
+                  </tooltip>
+              </TextField>
+              
+              <Label text="Product" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+              <TextField fx:id="productName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <tooltip>
+                      <Tooltip text="Name for product bought/sold by Market" />
+                  </tooltip>
+              </TextField>
+              
+              <Label text="Money" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+              <TextField fx:id="money" text="0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <tooltip>
+                      <Tooltip text="Initial amount of money held by market" />
+                  </tooltip>
+              </TextField>
+              
+              <Label text="Max Employees" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+              <TextField fx:id="employees" text="0" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <tooltip>
+                      <Tooltip text="Max. number of employees market can hire" />
+                  </tooltip>
+              </TextField>
+              
+              <Label text="Region" GridPane.columnIndex="2" />
+              <ChoiceBox fx:id="region" prefWidth="150.0" GridPane.columnIndex="3">
+                  <GridPane.margin>
+                      <Insets left="10.0" />
+                  </GridPane.margin>
+              </ChoiceBox>
+              
+              <Label text="Bank" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+              <ChoiceBox fx:id="bankName" prefWidth="150.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <GridPane.margin>
+                      <Insets left="10.0" />
+                  </GridPane.margin>
+              </ChoiceBox>
+              
+              <Label text="Max Stock" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+              <TextField fx:id="maxStock" text="20" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <tooltip>
+					  <Tooltip text="Maximum stock to store" />
+                  </tooltip>
+              </TextField>
+      
+              <Label text="Stock" GridPane.rowIndex="5" />
+              <TextField fx:id="stockSize" editable="true" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                  <GridPane.margin>
+                      <Insets left="20.0" right="20.0" />
+                  </GridPane.margin>
+              </TextField>
+            <Label text="TTL" GridPane.rowIndex="3" />
+            <TextField fx:id="TTL" text="-1" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <tooltip>
+					  <Tooltip text="Time To Live (-1 = no decay)" />
+                  </tooltip>
+		    </TextField>
+            <Label text="Min Spread" GridPane.rowIndex="4" />
+            <Label text="Max Spread" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="minSpread" text="1" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                  <tooltip>
+					  <Tooltip text="Minimum Bid/Ask Spread" />
+                  </tooltip>
+		    </TextField>
+            <TextField fx:id="maxSpread" text="5" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                  <tooltip>
+					  <Tooltip text="Minimum Bid/Ask Spread" />
+                  </tooltip>
+		    </TextField>
+            <Label prefHeight="15.0" prefWidth="89.0" text="Min Capital" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="minCapital" text="200" GridPane.columnIndex="3" GridPane.rowIndex="5" >
+                  <tooltip>
+					  <Tooltip text="Minimum Capital to retain (wrt salaries and dividends)" />
+                  </tooltip>
+		    </TextField>
+            <CheckBox fx:id="payDividend" mnemonicParsing="false" text="Dividend" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+          </children>
+           
+       </GridPane>
+       <HBox alignment="CENTER">
+           <opaqueInsets>
+               <Insets />
+           </opaqueInsets>
+           <padding>
+               <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+           </padding>
+          <children>
+              <Button fx:id="okButton" defaultButton="true" mnemonicParsing="false" onAction="#onOkButton" text="OK" />
+          </children>
+       </HBox>
+   </children>
+</VBox>

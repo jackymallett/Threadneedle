@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.Long?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <GridPane>
+        <hgap>
+            <Long fx:value="5"/>
+        </hgap>
+        <vgap>
+            <Long fx:value="5"/>
+        </vgap>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <Label text="Country" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="companyName" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <Label text="Population" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <Label text="Workers" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="Dependants" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <Label text="Product" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="productName" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+        <Label text="Market" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+        <TextField fx:id="marketName" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+    </GridPane>
+    <HBox alignment="CENTER">
+        <opaqueInsets>
+            <Insets/>
+        </opaqueInsets>
+        <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+        </padding>
+        <Button fx:id="okButton" defaultButton="true" mnemonicParsing="false" onAction="#onOkButton" text="OK"/>
+    </HBox>
+</VBox>

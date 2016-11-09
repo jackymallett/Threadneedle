@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import gui.MarketViewController?>
+<?import javafx.scene.control.*?>
+<MarketViewController fx:id="marketView" xmlns:fx="http://javafx.com/fxml" fx:controller="gui.MarketViewController" alignment="CENTER">
+  <TableView fx:id="tableView">
+      <tooltip>
+         <Tooltip text="Add Markets to Simulation"/>
+      </tooltip>
+      <columns>
+        <TableColumn text="Bid"     fx:id="bidCol"     prefWidth="75">  </TableColumn>
+        <TableColumn text="Product" fx:id="productCol" prefWidth="120"> </TableColumn>
+        <TableColumn text="Ask"     fx:id="askCol"     prefWidth="75">  </TableColumn>
+    </columns>
+  </TableView>
+</MarketViewController>

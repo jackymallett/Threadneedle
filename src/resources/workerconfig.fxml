@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="gridPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="153.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="110.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="96.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="19.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="108.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="291.0" minWidth="10.0" prefWidth="102.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="10.0" prefWidth="133.0" />
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="495.0" minWidth="10.0" prefWidth="72.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="30.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="30.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    </rowConstraints>
+   <children>
+       <Label text="Product" GridPane.columnIndex="3">
+           <GridPane.margin>
+             <Insets left="10.0" />
+           </GridPane.margin>
+       </Label>
+       <Label text="Purchase Q" GridPane.columnIndex="3" GridPane.rowIndex="1">
+           <GridPane.margin>
+             <Insets left="10.0" />
+           </GridPane.margin>
+       </Label>
+       <Label text="Consume Q" GridPane.columnIndex="3" GridPane.rowIndex="2">
+           <GridPane.margin>
+             <Insets left="10.0" />
+           </GridPane.margin>
+       </Label>
+       <Label text="Store Q" GridPane.columnIndex="3" GridPane.rowIndex="3">
+           <GridPane.margin>
+             <Insets left="10.0" />
+           </GridPane.margin>
+       </Label>
+       <TextField fx:id="purchase" text="1" GridPane.columnIndex="4" GridPane.rowIndex="1">
+           <GridPane.margin> <Insets right="10.0" /> </GridPane.margin>
+		   <tooltip><Tooltip text="Max. quantity that it will try and buy each round."/></tooltip>
+       </TextField>
+       <TextField fx:id="consume"  text="1" GridPane.columnIndex="4" GridPane.rowIndex="2">
+		   <tooltip><Tooltip text="Quantity to consume each round if in store."/></tooltip>
+           <GridPane.margin> <Insets right="10.0" /> </GridPane.margin>
+       </TextField>
+	   <TextField fx:id="store" prefHeight="25.0" prefWidth="118.0"  text="1" GridPane.columnIndex="4" GridPane.rowIndex="3">
+		   <tooltip><Tooltip text="Total quantity that can be stored (>= 1)"/></tooltip>
+           <GridPane.margin> <Insets right="10.0" /> </GridPane.margin>
+       </TextField>
+       <Button mnemonicParsing="false" onAction="#onOkButton" text="OK" GridPane.columnIndex="6" GridPane.rowIndex="4">
+           <GridPane.margin> <Insets left="10.0" /> </GridPane.margin>
+       </Button>
+       <CheckBox fx:id="useloan" contentDisplay="LEFT" mnemonicParsing="false" text="Use Loan" GridPane.columnIndex="5">
+           <GridPane.margin> <Insets left="10.0" /> </GridPane.margin>
+		   <tooltip><Tooltip text="Use loan to buy good if insufficient funds"/></tooltip>
+       </CheckBox>
+       <CheckBox fx:id="consumable" mnemonicParsing="false" text="Consumable" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="1">
+           <GridPane.margin> <Insets left="10.0" /> </GridPane.margin>
+		   <tooltip><Tooltip text="Consumable - can be used up, otherwise permanent object for trade."/></tooltip>
+       </CheckBox>
+       <Label text="No. Workers">
+           <GridPane.margin> <Insets left="10.0" /> </GridPane.margin>
+       </Label>
+       <TextField fx:id="noWorkers" GridPane.columnIndex="1" />
+       <Label text="Bank" GridPane.rowIndex="2">
+           <GridPane.margin>
+             <Insets left="10.0" />
+           </GridPane.margin>
+       </Label>
+       <ChoiceBox fx:id="bank" prefWidth="150.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+       <Label text="Initial Deposit" GridPane.rowIndex="3">
+           <GridPane.margin> <Insets left="10.0" /> </GridPane.margin>
+		   <tooltip><Tooltip text="Money available to agent at start of simulation."/></tooltip>
+       </Label>
+       <TextField fx:id="deposit" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+       <Separator orientation="VERTICAL" prefHeight="150.0" prefWidth="26.0" GridPane.columnIndex="2" GridPane.rowSpan="2147483647" />
+       <Button fx:id="product" mnemonicParsing="false" onScroll="#productRotate" prefHeight="25.0" prefWidth="94.0" GridPane.columnIndex="4" />
+       <Label text="Initial Salary" GridPane.rowIndex="4">
+           <GridPane.margin> <Insets left="10.0" /> </GridPane.margin>
+       </Label>
+       <TextField fx:id="initialSalary" GridPane.columnIndex="1" GridPane.rowIndex="4">
+		   <tooltip><Tooltip text="Starting salary (can be adjusted during run)."/></tooltip>
+	   </TextField>
+      <CheckBox fx:id="randomPurchase" mnemonicParsing="false" text="Random Purchase" GridPane.columnIndex="5" GridPane.columnSpan="2" GridPane.rowIndex="2">
+		   <tooltip><Tooltip text="Randomise order of goods purchased each round"/></tooltip>
+         <GridPane.margin>
+            <Insets left="10.0" />
+         </GridPane.margin>
+      </CheckBox>
+   </children>
+</GridPane>

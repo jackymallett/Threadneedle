@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import charts.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import java.lang.*?>
+<ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="650.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1">
+
+    <FlowPane fx:id="flowpane" xmlns:fx="http://javafx.com/fxml">
+        <StepChart fx:id="money" summation="false" title="Money Supply" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="money"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="civilServants" summation="false" title="Civil Servants" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="civilServants"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="revenue" summation="false" title="Revenue" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="revenue"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="newbanklending" title="New Bank Lending"  summation="false" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="newbanklending"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="reserves" summation="false" title="Reserves" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="reserves"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="totaldefaults" title="Total Defaults" summation="true" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="totalDefaults"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="interestincome" title="Interest Income" summation="false" prefHeight="300.0"
+                   prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="interestIncome"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="distribution" title="Monetary Distribution" summation="true" prefHeight="300.0"
+                   prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                    <String fx:value="totalWorkerDeposits"/>
+                    <String fx:value="totalMarketDeposits"/>
+                    <String fx:value="totalCompanyDeposits"/>
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="stocksavg" title="AvgStockPrices" summation="false" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="stocks" title="StockPrices" summation="false" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="prices" title="Prices" summation="false" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="unemployed" title="Unemployed" summation="false" prefHeight="300.0"
+                   prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="inventory" title="Inventory" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="production" title="Production" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+        <StepChart fx:id="consumption" title="Consumption" summation="false" prefHeight="300.0" prefWidth="300.0">
+            <statistics>
+                <FXCollections fx:factory="observableArrayList">
+                </FXCollections>
+            </statistics>
+        </StepChart>
+    </FlowPane>
+</ScrollPane>

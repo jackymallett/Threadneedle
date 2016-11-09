@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+<?import java.lang.Long?>
+<ScrollPane xmlns:fx="http://javafx.com/fxml">
+    <VBox>
+        <GridPane fx:id="bankgrid">
+            <hgap>
+                <Long fx:value="5"/>
+            </hgap>
+            <vgap>
+                <Long fx:value="5"/>
+            </vgap>
+            <padding>
+                <Insets top="10" bottom="10" right="5" left="5"/>
+            </padding>
+        </GridPane>
+    </VBox>
+</ScrollPane>

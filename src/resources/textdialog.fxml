@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.*?>
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+          prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="358.0" minWidth="10.0" prefWidth="282.0"/>
+        <ColumnConstraints hgrow="SOMETIMES" maxWidth="330.0" minWidth="10.0" prefWidth="318.0"/>
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints maxHeight="361.0" minHeight="10.0" prefHeight="361.0" vgrow="SOMETIMES"/>
+        <RowConstraints maxHeight="75.0" minHeight="1.0" prefHeight="39.0" vgrow="SOMETIMES"/>
+    </rowConstraints>
+    <TextArea fx:id="description" prefHeight="367.0" prefWidth="600.0" GridPane.columnSpan="2147483647"/>
+    <Button fx:id="saveButton" onAction="#onSaveButton" mnemonicParsing="false" text="Save" GridPane.columnIndex="1"
+            GridPane.rowIndex="1"/>
+</GridPane>

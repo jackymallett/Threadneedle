@@ -1,0 +1,10 @@
+{
+"description" : "",
+"GsonAgent" : 
+ [ 
+  {"clss":"BaselGovt","json":"{\"country\":\"Erewhon\",\"capitalPct\":10.0,\"reservePct\":10,\"reserveControls\":true,\"capitalControls\":false,\"payUnemployment\":false,\"unemploymentPayment\":0,\"personalTaxRate\":0,\"corporateTaxRate\":0,\"personalCutoff\":0,\"corporateCutoff\":0,\"maxCivilServants\":0,\"treasuryRate\":10.0,\"minWage\":1,\"name\":\"Erewhon\",\"initialDeposit\":0,\"bankname\":\"Central Bank\",\"x\":0.0,\"y\":0.0,\"defaultProb\":0.0,\"regionName\":\"\"}"},
+ {"clss":"Bank","json":"{\"sharePrice\":10,\"capitalPct\":0.2,\"capitalDividend\":0.0,\"capitalSteps\":12,\"interestRateDelta\":0,\"writeOffLimit\":6,\"lossProvisionPct\":0.01,\"labourInput\":0,\"name\":\"Bank-4\",\"initialDeposit\":0,\"bankname\":\"\",\"x\":330.0,\"y\":107.0,\"defaultProb\":0.0,\"regionName\":\"\"}"},
+ {"clss":"Bank","json":"{\"sharePrice\":10,\"capitalPct\":0.2,\"capitalDividend\":0.0,\"capitalSteps\":12,\"interestRateDelta\":0,\"writeOffLimit\":6,\"lossProvisionPct\":0.01,\"labourInput\":0,\"name\":\"Bank-5\",\"initialDeposit\":0,\"bankname\":\"\",\"x\":328.0,\"y\":223.0,\"defaultProb\":0.0,\"regionName\":\"\"}"},
+  {"clss":"LabourMarket","json":"{\"maxEmployees\":1,\"bidEqualsAsk\":false,\"maxInventory\":20,\"ttl\":-1,\"minSpread\":1,\"maxSpread\":5,\"minCapital\":200,\"payDividend\":false,\"product\":\"Labour\",\"labourInput\":0,\"name\":\"Labour\",\"initialDeposit\":0,\"bankname\":\"Central Bank\",\"x\":0.0,\"y\":0.0,\"defaultProb\":0.0,\"regionName\":\"\"}"}
+ ]
+}

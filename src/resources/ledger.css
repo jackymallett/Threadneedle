@@ -1,0 +1,28 @@
+.column-header-background {
+    visibility: hidden;
+    -fx-padding: -1em;
+}
+
+.text-field {
+    -fx-font-size: 12pt;
+}
+
+.table-cell {
+    -fx-font-size: 12px;
+}
+
+.table-row-cell:empty {
+    -fx-background-color: white;
+}
+
+.table-row-cell:empty .table-cell {
+    -fx-border-width: 0px;
+}
+
+.redRow . table-cell {
+    -fx-text-fill: red;
+}
+
+.blackRow . table-cell {
+    -fx-text-fill: black;
+}
