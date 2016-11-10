@@ -23,7 +23,8 @@ We believe that developing detailed simulations of the economy, based on individ
 financial transactions and market based pricing, can begin to address the
 current impasse in which (macro-)economics has found itself. Our approach is grounded
 in the scientific method, and we welcome collaboration with people who share our vision of developing a 
-basis for economic investigation based on the scientific method. If you want to contribute, please contact Dr. Jacky Mallett (jacky@iiim.is)
+basis for economic investigation based on the scientific method. If you would like to contribute or collaborate in 
+this endeavour, please contact Dr. Jacky Mallett (jacky@iiim.is)
 
 
 ### Funding 
@@ -43,7 +44,7 @@ Threadneedle has been funded by the Icelandic Institute of Intelligent Machines 
 * [Detailed description of Banking Operations used in Threadneedle Jacky Mallett] (http://arxiv.org/abs/1204.1583)
 * [Threadneedle: Tool for the simulation and analysis of banking systems Jacky Mallett](http://arxiv.org/abs/1502.06163)
 
-Please use these papers for citations. The author can be contacted at jacky@ru.is if you wish to discuss commercial licensing and availability, or courses and seminars on banking and finance using Threadneedle.
+Please use these papers for citations. The author can be contacted at jacky@ru.is if you wish to discuss commercial licensing and availability, collaboration or courses and seminars on banking and finance using Threadneedle.
 
 
 ### Contributors
