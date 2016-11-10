@@ -71,6 +71,8 @@ The owners (licensors) grant public use of this software under the following ter
   - CADIA Clause
   - “AS IS” Disclaimer
 
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+
 Threadneedle is provided free for non-commercial research purposes under the creative commons Attribution-NonCommercial-NoDerivatives 4.0 International License:
 
 https://creativecommons.org/licenses/by-nc-nd/4.0/
@@ -85,9 +87,6 @@ Under the following conditions:
   NonCommercial - You may not use the material for commercial purposes.
   NoDerivatives - If you remix, transform, or build upon the material, you may not 
      distribute the modified material.
-
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-
 
 —— CADIA Clause ——
 
