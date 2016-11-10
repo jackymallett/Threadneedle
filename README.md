@@ -11,9 +11,8 @@ structures as distributed systems and grounding them in network analysis and
 information theory. It is the first fully open-source software for simulating 
 economies based on an accurate reproduction of the double entry book keeping 
 transactions used by all modern banks.
-
 Sciences such as Physics, Chemistry, and Computer Science, have proceeded 
-by detailed investigation and experimentation with the micro-structure of 
+by detailed investigation and experimentation with the micro-structure of
 their fields to build up the considerable foundations on which they are 
 currently based.  As there is as yet no theory for the 'atomic level" of 
 economics, its methodology has taken a different path, 
@@ -58,10 +57,10 @@ Thröstur Thorarensen (Stock Market)
 ### License and Attribution
 
 THREADNEEDLE Simulation Framework
-developed by Jacky Mallet, Ph.D.
+developed by Jacky Mallett, Ph.D.
 
 Jointly owned by
-Jacky Mallet, Ph.D.
+Jacky Mallett, Ph.D.
 and the
 Icelandic Institute for Intelligent Machines
 Menntavegur 1, 2.h. Venus
