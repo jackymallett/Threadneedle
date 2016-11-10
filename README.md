@@ -59,10 +59,10 @@ Thröstur Thorarensen (Stock Market)
 THREADNEEDLE Simulation Framework
 developed by Jacky Mallett, Ph.D.
 
-Jointly owned by
+Jointly owned by \\
 Jacky Mallett, Ph.D.
 and the
-Icelandic Institute for Intelligent Machines
+Icelandic Institute for Intelligent Machines ses
 Menntavegur 1, 2.h. Venus
 101 Reykjavik Iceland
 
