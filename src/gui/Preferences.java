@@ -9,6 +9,12 @@
  * Date   : April 2015
  *
  * Todo   : add menu item to allow configuration of directories, etc.
+ *
+ * Threadneedle is provided free for non-commercial research purposes under 
+ * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
+ * International License:
+ *
+ * https://creativecommons.org/licenses/by-nc-nd/4.0/
  */
 package gui;
 

@@ -7,6 +7,12 @@
  *
  * Comments:   Changes and bugs here effect the entire simulation, as 
  *             statistics are also used within models for input to behaviours
+ *
+ * Threadneedle is provided free for non-commercial research purposes under 
+ * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
+ * International License:
+ *
+ * https://creativecommons.org/licenses/by-nc-nd/4.0/
  */
 package statistics;
 

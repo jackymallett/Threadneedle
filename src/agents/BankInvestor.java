@@ -11,7 +11,15 @@
  *            the minimum specified investment, they will attempt to buy
  *            more bank shares from the specified bank they are an investor
  *            in. This does not imply that the bank has to sell them any.
+ *
+ *
+ * Threadneedle is provided free for non-commercial research purposes under 
+ * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
+ * International License:
+ *
+ * https://creativecommons.org/licenses/by-nc-nd/4.0/
  */
+
 package agents;
 
 import core.*;

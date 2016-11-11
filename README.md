@@ -33,7 +33,7 @@ Threadneedle has been funded by the Icelandic Institute of Intelligent Machines 
 ### Guides
 
 * [Getting Started] (https://github.com/jackymallett/Threadneedle/wiki/Getting-Started)
-* [Instructions for Eclipse Users](https://github.com/jackymallett/Threadneedle/raw/master/Instructions_for_Eclipse.pdf)
+* [Instructions for Eclipse Users](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Instructions_for_Eclipse.pdf)
 * [User Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Threadneedle_Intro.pdf)
 * [Programming Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/ProgrammingGuide.pdf)
 * [Introduction to Economic Simulation(Work in Progress)](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/IntroToEconomicSimulation.pdf)
