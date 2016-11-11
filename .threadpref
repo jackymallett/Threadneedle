@@ -1,20 +1,20 @@
 {
   "configDirectory": ".",
   "charts": {
-    "production": false,
-    "interestincome": true,
+    "production": true,
+    "interestincome": false,
     "civilServants": false,
     "reserves": false,
     "consumption": false,
-    "distribution": false,
-    "inventory": false,
+    "distribution": true,
+    "inventory": true,
     "stocks": false,
     "revenue": false,
     "money": true,
-    "totaldefaults": true,
+    "totaldefaults": false,
     "stocksavg": false,
-    "newbanklending": true,
-    "prices": false,
+    "newbanklending": false,
+    "prices": true,
     "unemployed": false
   }
 }
