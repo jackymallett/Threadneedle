@@ -5,7 +5,7 @@
  *
  * Show a panel displaying aggregate books for the banks in the simulation.
  *
- * Author : Jacky Mallett (c)
+ * Author : Copyright (c) Jacky Mallett
  * Date   : June 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 

@@ -5,7 +5,7 @@
  * configuration dialog. This allows multiple different agent types to be
  * specified from the controller.
  *
- * Author : (c) Jacky Mallett
+ * Author : Copyright (c) Jacky Mallett
  * Date   : January 2015
  *
  * Threadneedle is provided free for non-commercial research purposes under 

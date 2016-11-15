@@ -1,4 +1,11 @@
 /*
+ * Program: Threadneedle
+ *
+ * GovtConfig provides the confguration panel for the Government (click
+ * on main pane background to see).
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
@@ -144,7 +151,6 @@ public class GovtConfig extends Stage implements Initializable
   }
 
   // todo:update values here
-  // todo: allow money to be changed here, if not in basel banking system
   @FXML void onOkButton(ActionEvent event)
   {
     // Add new region to the simulation.

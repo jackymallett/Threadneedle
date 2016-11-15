@@ -1,4 +1,16 @@
 /*
+ * Program: Threadneedle
+ *
+ * TableViewWithVisibleRowCount - wrapper for tableview which allows
+ * control over how many rows are visible. Used to display ledgers
+ * properly.
+ *
+ * Source:
+ * http://stackoverflow.com/questions/26298337/change-number-of-table-rows
+ * /26364210#26364210
+ *
+ * Author Jeanette Winzenburg, Berlin
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
@@ -14,15 +26,6 @@ import javafx.beans.property.*;
 
 import java.lang.reflect.*;
 
-/**
- * TableView with visibleRowCountProperty.
- * <p>
- * source:
- * http://stackoverflow.com/questions/26298337/change-number-of-table-rows
- * /26364210#26364210
- *
- * @author Jeanette Winzenburg, Berlin
- */
 public class TableViewWithVisibleRowCount<T> extends TableView<T>
 {
   private final IntegerProperty visibleRowCount = new SimpleIntegerProperty(this,

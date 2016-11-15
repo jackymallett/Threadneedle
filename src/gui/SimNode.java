@@ -5,7 +5,7 @@
  * Container node for simulation objects in main view. Handles configuration
  * and provides link between simulation engine and objects in view.
  *
- * Author  :  Jacky Mallett
+ * Author  :  Copyright (c) Jacky Mallett
  * Date    :  July 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 

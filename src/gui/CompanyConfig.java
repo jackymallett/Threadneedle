@@ -1,4 +1,10 @@
 /*
+ * Program: Threadneedle
+ *
+ * CompanyConfig  Configuration pane for a company.
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
@@ -119,7 +125,7 @@ class CompanyConfig extends Stage implements Initializable
 		   company.initialDeposit = company.getDeposit();
     }
     else if(company.getDeposit() > input_money)
-       System.out.println("Decreasing money supply not available here");
+       System.out.println("Reducing money supply not available");
 
     if(company.region != null && region.getValue() != null) 
     {

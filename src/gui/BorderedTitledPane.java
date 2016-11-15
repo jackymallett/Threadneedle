@@ -1,10 +1,19 @@
 /*
+ * Program: Threadneedle
+ *
+ * BorderedTitledPane  Places content in a bordered pane with a title
+ *
+ * Source: https://gist.github.com/jewelsea/2838292
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
  * International License:
  *
  * https://creativecommons.org/licenses/by-nc-nd/4.0/
+ *
  */
 package gui;
 
@@ -13,10 +22,6 @@ import javafx.geometry.*;
 import javafx.scene.layout.*;
 import javafx.scene.control.*;
 
-/**
- * Places content in a bordered pane with a title.
- */
-// Source: https://gist.github.com/jewelsea/2838292
 
 class BorderedTitledPane extends StackPane
 {

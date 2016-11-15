@@ -2,7 +2,7 @@
  *
  * Main entry point for Threadneedle Simulations.
  *
- * Author : Jacky Mallett
+ * Author : Copyright (c) Jacky Mallett
  * Date   : September 2013
  *
  * Threadneedle is provided free for non-commercial research purposes under 
@@ -44,29 +44,22 @@ public class Threadneedle extends Application
   @Override
   public void start(Stage primaryStage)
   {
-    String batchfile = null;
-    boolean cmdline = false;
+    String batchfile    = null;
+    boolean cmdline    = false;
     boolean showCharts = false;
-
-
-    // determine network exists
-    // send packet to server: provide ip,mac, local information
-    // cookie hunting??
-    // request version #
-
-    // Display as part of screen this version/current version
-    //   - significant changes
-
 
     try
     {
       Map<String, String> args = getParameters().getNamed();
       List<String> args2 = getParameters().getUnnamed();
 
-      // todo: parameterise modelconfig file for cli/batch
-      // Process command line arguments:
-      // --b=<file>   Batch file mode
-      // --cl         Command line (no gui)
+      /* 
+	   *  Process command line arguments:
+       *    --b=<file>   Batch file mode
+	   *    --charts     Show charts - use with --b to provide charts/cli
+	   *                 without main gui.
+       *    --cl         Command line with gui
+	   */
 
       if (args.containsKey("b"))
       {
@@ -80,9 +73,11 @@ public class Threadneedle extends Application
         if (a.equals("--charts")) showCharts = true;
       }
 
-      // Get initial setup information. For batch runs
-      // contents of modelConfig are used directly, gui runs
-      // allow the user to change parameters 
+      /* 
+	   * Get initial setup information. For batch runs contents of 
+	   * modelConfig are used directly, gui runs  allow the user to 
+	   * change parameters 
+	   */
 
       ModelConfig m = new ModelConfig();
 
@@ -121,8 +116,7 @@ public class Threadneedle extends Application
 
       //this.setWidth(300.0); 
 
-      // Start command line interface as a separate thread if
-      // specified.
+      // Start command line interface as a separate thread if specified.
       if(cmdline) 
       {
         CLI cli = new CLI(null, charts, batchfile);

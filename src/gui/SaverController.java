@@ -1,4 +1,9 @@
 /*
+ * Program: Threadneedle
+ *
+ * SaverController - provide configuration panel for Saver agent
+ *
+ * Author : Copyright (c) Jacky Mallett
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 

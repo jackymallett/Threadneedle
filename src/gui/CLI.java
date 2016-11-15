@@ -1,9 +1,9 @@
 /* Program  : Threadneedle
  *
  * CLI      : Provide command line interface control over simulation for
-              batch runs.
+ *            batch runs.
  * 
- * Author   : Jacky Mallett
+ * Author   : Copyright (c) Jacky Mallett
  * Date     : November 2012
  * Comments : All commands are passed the command line, even those that
  *            don't have one.
@@ -50,10 +50,6 @@ public class CLI implements Runnable
 
   String[] cmds =
   {
-     //"write file    : write new config to file",
-     //"show          : show parameter in runtime simulation",
-     // "report [file]          : print report on simulation optionally to file",
-
     "step [n]                 : Step simulation n steps (default 1200)",
     "steps [n]                : Step simulation n steps while updating charts",
     "repeat times command     : repeat a command multiple times",

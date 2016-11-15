@@ -4,7 +4,7 @@
  *
  * Provides connected line between two nodes, centered in middle of node.
  *
- * Author : Jacky Mallett
+ * Author : Copyright (c) Jacky Mallett
  * Date   : October 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 

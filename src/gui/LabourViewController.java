@@ -1,4 +1,10 @@
 /*
+ * Program: Threadneedle
+ *
+ * LabourViewController  - controller for labour market 
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 

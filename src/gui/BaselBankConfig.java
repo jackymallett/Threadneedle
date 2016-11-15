@@ -1,4 +1,10 @@
 /*
+ * Program: Threadneedle
+ *
+ * BaselBankConfig  Configuration pane for a Bank.
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
@@ -74,9 +80,6 @@ public class BaselBankConfig extends Stage implements Initializable
       prefSharePrice.setText(Long.toString(bank.sharePrice));
       dividendIncrease.setText(Double.toString(bank.capitalDividend));
       lossProvisionPct.setText(Double.toString(bank.lossProvisionPct));
-
-      //      depositAmount.setText(depositAmount.getPromptText());
-      //      capitalIncrease.setText(capitalIncrease.getPromptText());
 
     }
     catch (IOException e)

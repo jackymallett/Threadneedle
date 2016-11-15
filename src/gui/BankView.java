@@ -1,4 +1,10 @@
 /*
+ * Program: Threadneedle
+ *
+ * BankView  Provide a display of a single bank's general ledger
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 
@@ -14,10 +20,6 @@ import javafx.scene.layout.*;
 import core.*;
 
 // http://docs.oracle.com/javafx/2/fxml_get_started/fxml_tutorial_intermediate.htm#CACFEHBI
-
-/**
- * Display the General ledger for a single bank.
- */
 
 public class BankView extends HBox
 {

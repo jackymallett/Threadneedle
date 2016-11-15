@@ -4,8 +4,8 @@
  *
  * Common static imports for GUI.
  *
- * Author  :  Jacky Mallett
- * Date    :  January 2015
+ * Author  : Copyright (c) Jacky Mallett
+ * Date    : January 2015
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 

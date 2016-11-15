@@ -2,7 +2,7 @@
  *
  * GUI controller for Borrower configuration.
  *
- * Author : Jacky Mallett
+ * Author : Copyright (c) Jacky Mallett
  * Date   : September 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 

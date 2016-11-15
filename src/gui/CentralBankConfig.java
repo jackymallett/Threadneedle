@@ -2,7 +2,7 @@
  *
  * Central Bank configuration.
  *
- * Author: Jacky Mallett
+ * Author : Copyright (c) Jacky Mallett
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 

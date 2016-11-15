@@ -1,4 +1,12 @@
-/*
+/**
+ * Program: Threadneedle
+ *
+ * Provide a view of an individual agent.
+ *
+ * Provide a summary of the state of the agents in the running simulation.
+ *
+ * Author : (c) Jacky Mallett
+ * Date   : October 2016
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 

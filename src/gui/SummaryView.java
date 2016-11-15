@@ -5,7 +5,7 @@
  *
  * Provide a summary of the state of the agents in the running simulation.
  *
- * Author : Jacky Mallett (c)
+ * Author : Copyright (c) Jacky Mallett 
  * Date   : August 2015
  *
  * Threadneedle is provided free for non-commercial research purposes under 

@@ -1,6 +1,6 @@
 /* Program: Threadneedle
  *
- * Simulation Engine
+ * MainController
  *
  * Controller for economic model. Keeps track of all objects in the model,
  * and provides step/run controls for running simulations from GUI or
@@ -74,7 +74,6 @@ public class MainController extends Stage implements Initializable
 
   private final String configFile = "defaultSimulation.json";
 
-  // private Point2D dragAnchor;
   private final ModelConfig mConfig;
 
   private int stepN = 1; // No. of steps to make each time on step button
@@ -107,12 +106,10 @@ public class MainController extends Stage implements Initializable
   @Override
   public void initialize(URL fxmlFileLocation, ResourceBundle resources)
   {
-    // assert exitButton != null : "fx:id exitButton not injected";
     mainPane.setStyle("-fx-border-color: black;");
     setTitle(simeng.getTitle());
 
     this.initialize();
-
   }
 
   /**

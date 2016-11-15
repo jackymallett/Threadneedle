@@ -36,12 +36,6 @@ import javafx.beans.property.*;
 import core.*;
 import static gui.Common.*;
 
-// billmill.org/pymag-trees
-// gephi.github.io
-// hiveplot
-// http://stackoverflow.com/questions/19748744/javafx-how-to-connect-two-nodes-by-a-line
-// http://johnthecodingarchitect.blogspot.com/2013/11/implementing-custom-javafx-bindings.html
-
 public class MainPane extends Pane
 {
   int              noMarkets = 0; // No. of markets currently on pane
@@ -360,7 +354,6 @@ public class MainPane extends Pane
         {
           distance = d;
           found = (Bank) a;
-        //System.out.println("Distance : " + d + " " + ((Bank)found).name);
         }
       }
 

@@ -1,4 +1,11 @@
 /*
+ * Program: Threadneedle
+ *
+ * LoanViewer - display the accounts for a loan ledger
+ *
+ * Author : Copyright (c) Jacky Mallett
+ * Date   : September 2013
+ *
  *
  * Threadneedle is provided free for non-commercial research purposes under 
  * the creative commons Attribution-NonCommercial-NoDerivatives 4.0 

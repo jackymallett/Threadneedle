@@ -2,7 +2,7 @@
  *
  * Calculate screen settings for individual panes to adapt to screen size.
  *
- * Author : Jacky Mallett
+ * Author : Copyright (c) Jacky Mallett
  * Date   : February 2016
  *
  * Threadneedle is provided free for non-commercial research purposes under 

@@ -2,7 +2,7 @@
  *
  * Stage for modelconfig.fxml
  *
- * Author  :  (c) Jacky Mallett
+ * Author  :  Copyright (c) Jacky Mallett
  * Date    :  November 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 

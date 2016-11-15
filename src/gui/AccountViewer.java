@@ -5,7 +5,7 @@
  *
  * Provide a view of the accounts being managed by a bank.
  *
- * Author : Jacky Mallett (c)
+ * Author : Copyright (c) Jacky Mallett
  * Date   : January 2015
  *
  * Threadneedle is provided free for non-commercial research purposes under 

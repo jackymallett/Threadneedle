@@ -5,7 +5,7 @@
  *
  * View controller for each individual bank's ledger.
  *
- * Author : Jacky Mallett (c)
+ * Author : Copyright (c) Jacky Mallett
  * Date   : January 2015
  *
  * Threadneedle is provided free for non-commercial research purposes under 

@@ -5,7 +5,7 @@
  *
  * Provide a popup dialog.
  *
- * Author : Jacky Mallett (c)
+ * Author : Copyright (c) Jacky Mallett
  * Date   : August 2014
  *
  * Threadneedle is provided free for non-commercial research purposes under 
