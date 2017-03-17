@@ -1,10 +1,10 @@
 Threadneedle
 ============
 
-[Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started) |
-[Experiments] (https://github.com/jackymallett/Threadneedle/wiki/Laboratories)|
-[Videos] |
-[Contributing] (https://github.com/jackymallett/Threadneedle/wiki/Contributing) |
+[Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started) | 
+[Experiments](https://github.com/jackymallett/Threadneedle/wiki/Laboratories) | 
+[Videos](http://threadneedle.iiim.is/Tutorials.html) | 
+[Contributing](https://github.com/jackymallett/Threadneedle/wiki/Contributing) |
 
 Threadneedle takes a new approach to Economic research, examining economic
 structures as distributed systems and grounding them in network analysis and 
