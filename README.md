@@ -1,11 +1,20 @@
 Threadneedle
 ============
 
-
+<!--
 [Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started) | 
 [Experiments](https://github.com/jackymallett/Threadneedle/wiki/Laboratories) | 
 [Videos](http://threadneedle.iiim.is/Tutorials.html) | 
 [Contributing](https://github.com/jackymallett/Threadneedle/wiki/Contributing) |
+-->
+### Guides
+
+* [Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started)
+* [Instructions for Eclipse Users](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Instructions_for_Eclipse.pdf)
+* [User Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Threadneedle_Intro.pdf)
+* [Programming Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/ProgrammingGuide.pdf)
+* [Introduction to Economic Simulation(Work in Progress)](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/IntroToEconomicSimulation.pdf)
+
 
 Threadneedle takes a new approach to Economic research, examining economic
 structures as distributed systems and grounding them in network analysis and 
@@ -29,15 +38,7 @@ this endeavour, please contact Dr. Jacky Mallett (jacky@iiim.is)
 
 ### Funding 
 
-Threadneedle has been funded by the Icelandic Institute of Intelligent Machines on the initiative of its Principle Investigator and Senior Researcher Dr. Jacky Mallett, and IIIM's Director Dr. Kris R. Thórisson. IIIM has benefited from competitive research grants organized by the Science and Technology Policy Board of Iceland and administered by Rannís, Iceland.
-
-### Guides
-
-* [Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started)
-* [Instructions for Eclipse Users](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Instructions_for_Eclipse.pdf)
-* [User Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Threadneedle_Intro.pdf)
-* [Programming Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/ProgrammingGuide.pdf)
-* [Introduction to Economic Simulation(Work in Progress)](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/IntroToEconomicSimulation.pdf)
+Threadneedle was originally funded by the Icelandic Institute of Intelligent Machines on the initiative of its Principle Investigator and Senior Researcher Dr. Jacky Mallett, and IIIM's Director Dr. Kris R. Thórisson. IIIM has benefited from competitive research grants organized by the Science and Technology Policy Board of Iceland and administered by Rannís, Iceland.
 
 ### Papers
 
