@@ -42,7 +42,7 @@ Threadneedle was originally funded by the Icelandic Institute of Intelligent Mac
 
 ### Papers
 
-* [Detailed description of Banking Operations used in Threadneedle Jacky Mallett] (http://arxiv.org/abs/1204.1583)
+* [Detailed description of Banking Operations used in Threadneedle Jacky Mallett](http://arxiv.org/abs/1204.1583)
 * [Threadneedle: Tool for the simulation and analysis of banking systems Jacky Mallett](http://arxiv.org/abs/1502.06163)
 
 Please use these papers for citations. The author can be contacted at jacky@ru.is if you wish to discuss commercial licensing and availability, collaboration or courses and seminars on banking and finance using Threadneedle.
