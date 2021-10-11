@@ -10,7 +10,7 @@ Threadneedle
 ### Guides
 
 * [Getting Started](https://github.com/jackymallett/Threadneedle/wiki/Getting-Started)
-* [Running Threadneedle](https://github.com/jackymallett/Threadneedle/wiki/Running)
+* [Running Threadneedle](https://github.com/jackymallett/Threadneedle/wiki/Running-Threadneedle)
 * [Instructions for Eclipse Users](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Instructions_for_Eclipse.pdf)
 * [User Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/Threadneedle_Intro.pdf)
 * [Programming Guide for Threadneedle](https://github.com/jackymallett/Threadneedle/raw/master/Documentation/ProgrammingGuide.pdf)
