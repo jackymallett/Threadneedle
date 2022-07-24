@@ -34,7 +34,7 @@ financial transactions and market based pricing, can begin to address the
 current impasse in which (macro-)economics has found itself. Our approach is grounded
 in the scientific method, and we welcome collaboration with people who share our vision of developing a 
 basis for economic investigation based on the scientific method. If you would like to contribute or collaborate in 
-this endeavour, please contact Dr. Jacky Mallett (jacky@iiim.is)
+this endeavour, please contact Dr. Jacky Mallett (jacky@ru.is/warlock@alum.mit.edu)
 
 
 ### Funding 
