@@ -19,7 +19,7 @@ package statistics;
 import base.Base;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableMap;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+//import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.HashMap;
 import java.util.LinkedList;
@@ -375,7 +375,7 @@ public class Statistic
   public static void saveToCsv(String Filename)
   {
     // TODO: Implement this
-    throw new NotImplementedException();
+    System.out.println("tbd: saveToCsv");
   }
 }
 

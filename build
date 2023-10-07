@@ -6,7 +6,18 @@
 # Author: David Gudjonsson
 
 CLASSES="classes"
-CP="classes:src/resources:lib/*:"
+CP="classes:src/resources:src:lib/*:"
+
+# Query Java Environoment
+
+# 
+PATH_TO_FX="/Users/jacky/Applications/javafx-sdk-14.0.1/lib"
+
+if [ -z "$PATH_TO_FX" ] || [ ! -d "${PATH_TO_FX}" ]; then
+   PATH_TO_FX=$FX
+   echo "PATH_TO_FX is not set, trying $FX"
+fi
+
 # Enable or disable lint warning checks
 #XL="-Xlint"
 XL=""				
@@ -18,12 +29,12 @@ else
 fi
 
 javac $XL -d classes -cp $CP src/base/*.java
-javac $XL -d classes -cp $CP src/statistics/*.java
-#javac $XL -d classes -cp $CP -parameters $XL src/core/*.java
-javac $XL -d classes -cp $CP src/agents/*.java
-javac $XL -d classes -cp $CP src/charts/*.java
-javac $XL -d classes -cp $CP src/gui/*.java
+javac $XL --module-path $PATH_TO_FX --add-modules=javafx.fxml -d classes -cp $CP src/statistics/*.java
+#javac $XL --module-path $PATH_TO_FX --add-modules=javafx.fxml -d classes -cp $CP -parameters $XL src/core/*.java
+javac $XL --module-path $PATH_TO_FX -d classes -cp $CP src/agents/*.java
+javac $XL --module-path $PATH_TO_FX --add-modules=javafx.fxml,javafx.controls,javafx.swing -d classes -cp $CP src/charts/*.java
+javac $XL --module-path $PATH_TO_FX --add-modules=javafx.fxml,javafx.controls -d classes -cp $CP src/gui/*.java
 
 # Pass parameters through to Threadneedle. 
 
-java -classpath $CP gui.Threadneedle $@
+java -classpath $CP --module-path $PATH_TO_FX --add-modules=javafx.fxml,javafx.controls,javafx.swing gui.Threadneedle $*

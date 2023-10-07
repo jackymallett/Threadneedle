@@ -34,7 +34,7 @@ import core.*;
  * Display Ledger View of a Bank
  */
 
-public class LedgerView extends TableViewWithVisibleRowCount
+public class LedgerView extends TableView
 {
   Bank bank;
   Stage     viewer;
@@ -60,7 +60,6 @@ public class LedgerView extends TableViewWithVisibleRowCount
     this.setItems(data);
 
     this.setColumnResizePolicy(TableView.CONSTRAINED_RESIZE_POLICY);
-    this.setVisibleRowCount(maxRows + 1);
 
     nameCol.setCellValueFactory(new PropertyValueFactory("Name"));
     balanceCol.setCellValueFactory(new PropertyValueFactory("Balance"));
