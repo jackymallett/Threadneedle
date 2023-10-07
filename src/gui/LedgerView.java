@@ -110,8 +110,15 @@ public class LedgerView extends TableView
       if (table.getFocusModel().getFocusedCell().getColumn() == transactionCol)
       {
         Stage s = new TransactionView(lr.ledger);
-        s.setAlwaysOnTop(true);
-        s.showAndWait();
+        if(s != null)
+        {
+           s.showAndWait();
+        }
+        else
+            System.out.println("Failed to create TransactionView\n");
+
+//        s.setAlwaysOnTop(true);
+//        s.showAndWait();
       }
       else
       {
